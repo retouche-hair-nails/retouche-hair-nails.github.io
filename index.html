@@ -8,14 +8,14 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Commissioner&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@300&display=swap" rel="stylesheet">
 <style>
 body {
 	font-family: 'Commissioner', sans-serif;
 	background: black;
-	text-align: justify;
 }
 .page {
-	padding: 10px;
+	padding: 30px;
 	max-width: 1100px;
 	margin-left: auto;
 	margin-right: auto;
@@ -24,43 +24,67 @@ body {
 	align-items: center;
 	justify-content: center;
 }
+h1 {
+	font-weight: 300;
+	color: #808080;
+}
+th {
+	background-color: #808080;
+	color: black;
+	width: 60%;
+	padding: 10px;
+}
+td {
+	padding-left: 10px;
+}
+@media screen and (min-width: 400px) {
+  custom-div {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  custom-div {
+    width: 100%;
+  }
+}
 </style>
 </head>
 <body>
 
 <div class="page">
 
-  <div class="w3-row" id="logo">
+  <div class="w3-row" id="logo" style="margin-top: 50px;">
      <img src="images/logo.PNG" class="w3-image w3-opacity-min" alt="Retouche" width="600" height="750">
   </div>
 
-  <div class="w3-row" id="welcome" style="display: flex; flex-direction: column; align-items: center;">
+  <div class="w3-row" id="welcome" style="display: flex; flex-direction: column; align-items: center; margin-top: 50px;">
     <div class="w3-col m6" style="color: white;">
-      <h1 style="color: #635b4d;">WELCOME</h1>
-	  <hr style="color: #635b4d; border-top: 3px solid; margin: 0px;" />
+      <h1>WELCOME</h1>
+	  <hr style="color: #808080; border-top: 3px solid; margin: 0px;" />
       <p class="w3-large">Καλως ήρθατε στο Retouche.</p>
       <p class="w3-large">Στόχος είναι να περάσετε μαζι μάς υπέροχες στιγμές και να ζήσετε μια μοναδική εμπειρία ομορφιάς.</p>
       <p class="w3-large">Στο ειδικά διαμορφωμένο μενού μας μπορείτε να επιλέξετε τις υπηρεσίες που ανταποκρίνονται στις δικές σας ανάγκες.</p>
       <p class="w3-large">Η ομάδα του Retouche είναι πάντα εκπαιδευμένη και ενημερωμένη για τις τελευταίες τάσεις και τεχνικές στην περιοίηση των μαλλιών στην Ελλάδα και το εξωτερικό.</p>
       <p class="w3-large">Στο Retouche σας παρέχουμε:</p>
 	  <ul>
-		<li>Εξειδικευμένη και προσωποποιημένη συμβουλευτική πριν από οποιαδήποτε υπηρεσία.</li>
-		<li>Χρησιμοποιούμε υψηλής ποιότητας επαγγελματικά προϊόντα απο τις κορυφαίες εταιρίες παγκοσμίως.</li>
-		<li>Χρησιμοποιούμε αποστειρωμένες πετσέτες και αποστειρωμένα κιμονό για προσωπική χρήση.</li>
+		<li class="w3-large">Εξειδικευμένη και προσωποποιημένη συμβουλευτική πριν από οποιαδήποτε υπηρεσία.</li>
+		<li class="w3-large">Χρησιμοποιούμε υψηλής ποιότητας επαγγελματικά προϊόντα απο τις κορυφαίες εταιρίες παγκοσμίως.</li>
+		<li class="w3-large">Χρησιμοποιούμε αποστειρωμένες πετσέτες και αποστειρωμένα κιμονό για προσωπική χρήση.</li>
 	  </ul>
     </div>
   </div>
 
-  <div class="w3-row" id="the-wash-house" style="display: flex; flex-direction: column; align-items: center;">
+  <div class="w3-row" id="the-wash-house" style="display: flex; flex-direction: column; align-items: center; margin-top: 30px;">
     <div class="w3-col m6" style="color: white;">
-      <h1 style="color: #635b4d;">THE WASH HOUSE</h1>
-	  <hr style="color: #635b4d; border-top: 3px solid; margin: 0px;" />
-      <p class="w3-large" style="font-style: italic;">Η εμπειρία Wash house ξεκινάει με διάγνωση της τρίχας και του δέρματος της κεφαλής. Επιλέγουμε τα κατάλληλα προϊόντα για εσάς , σας ενημερώνουμε για αυτά και προχωράμε στο λούσιμο.</p>
-	  <table style="width: 100%;">
+      <h1>THE WASH HOUSE</h1>
+	  <hr style="color: #808080; border-top: 3px solid; margin: 0px;" />
+      <p class="w3-medium" style="font-style: italic;">Η εμπειρία Wash house ξεκινάει με διάγνωση της τρίχας και του δέρματος της κεφαλής. Επιλέγουμε τα κατάλληλα προϊόντα για εσάς , σας ενημερώνουμε για αυτά και προχωράμε στο λούσιμο.</p>
+	  <table class="w3-large" style="width: 100%;">
 	    <tr>
-		  <th style="background-color: #635b4d; color: black; width: 60%;">ΥΠΗΡΕΣΙΑ</th>
-		  <th style="background-color: #635b4d; color: black; width: 20%;">ΔΙΑΡΚΕΙΑ</th>
-		  <th style="background-color: #635b4d; color: black; width: 15%;">ΚΟΣΤΟΣ</th>
+		  <th class="w3-medium">ΥΠΗΡΕΣΙΑ</th>
+		  <th class="w3-medium">ΔΙΑΡΚΕΙΑ</th>
+		  <th class="w3-medium">ΚΟΣΤΟΣ</th>
 	    </tr>
 	    <tr>
 		  <td>Λούσιμο</td>
@@ -81,16 +105,16 @@ body {
     </div>
   </div>
 
-  <div class="w3-row" id="the-wash-house" style="display: flex; flex-direction: column; align-items: center;">
+  <div class="w3-row" id="the-wash-house" style="display: flex; flex-direction: column; align-items: center; margin-top: 30px;">
     <div class="w3-col m6" style="color: white;">
-      <h1 style="color: #635b4d;">THE CUT</h1>
-	  <hr style="color: #635b4d; border-top: 3px solid; margin: 0px;" />
-      <p class="w3-large" style="font-style: italic;">Με γνώμονα την προσωπικότητα σας, την καθημερινότητά σας και φυσικά τις αρχές της προσωπολογίας, δημιουργούμε αποκλειστικά για εσάς το κατάλληλο κούρεμα.</p>
-	  <table style="width: 100%;">
+      <h1>THE CUT</h1>
+	  <hr style="color: #808080; border-top: 3px solid; margin: 0px;" />
+      <p class="w3-medium" style="font-style: italic;">Με γνώμονα την προσωπικότητα σας, την καθημερινότητά σας και φυσικά τις αρχές της προσωπολογίας, δημιουργούμε αποκλειστικά για εσάς το κατάλληλο κούρεμα.</p>
+	  <table class="w3-large" style="width: 100%;">
 	    <tr>
-		  <th style="background-color: #635b4d; color: black; width: 60%;">ΥΠΗΡΕΣΙΑ</th>
-		  <th style="background-color: #635b4d; color: black; width: 20%;">ΔΙΑΡΚΕΙΑ</th>
-		  <th style="background-color: #635b4d; color: black; width: 15%;">ΚΟΣΤΟΣ</th>
+		  <th class="w3-medium">ΥΠΗΡΕΣΙΑ</th>
+		  <th class="w3-medium">ΔΙΑΡΚΕΙΑ</th>
+		  <th class="w3-medium">ΚΟΣΤΟΣ</th>
 	    </tr>
 	    <tr>
 		  <td>Γυναικείο</td>
@@ -116,20 +140,20 @@ body {
     </div>
   </div>
 
-  <div class="w3-row" id="footer" style="display: flex; flex-direction: column; align-items: center; width: 100%;">
-    <div class="w3-col m6" style="color: white; width: 50%;">
-      <h4 style="color: #635b4d; text-align: center;">ΚΟΜΜΩΤΗΡΙΟ • ΠΕΡΙΠΟΙΗΣΗ ΑΚΡΩΝ • ΜΑΚΙΓΙΑΖ</h4>
-	  <hr style="color: #635b4d; border-top: 3px solid; margin: 0px;" />
+  <div class="w3-row" id="footer" style="display: flex; flex-direction: column; align-items: center; width: 100%; margin-top: 50px; margin-bottom: 10px;">
+    <div class="w3-col m6 custom-div" style="color: white;">
+      <h4 style="color: #808080; text-align: center;">ΚΟΜΜΩΤΗΡΙΟ • ΠΕΡΙΠΟΙΗΣΗ ΑΚΡΩΝ • ΜΑΚΙΓΙΑΖ</h4>
+	  <hr style="color: #808080; border-top: 3px solid; margin: 0px;" />
       <p class="w3-large" style="text-align: center;">Αριστοτέλους 6 & Τσιμισκή, 1ος Όροφος, Θεσσαλονίκη</p>
 	  <div style="display: flex; flex-direction: row; justify-content: space-evenly;">
 	    <a href="tel:2310-250-000">
-          <img src="images/phone.PNG" class="w3-image w3-opacity-min" alt="Phone" width="200" height="200">
+          <img src="images/phone.PNG" class="w3-image w3-opacity-min" alt="Phone" width="60" height="60">
 	    </a>
 	    <a href="https://www.facebook.com/Retouche.gr">
-          <img src="images/facebook.PNG" class="w3-image w3-opacity-min" alt="Facebook" width="200" height="200">
+          <img src="images/facebook.PNG" class="w3-image w3-opacity-min" alt="Facebook" width="60" height="60">
 	    </a>
 	    <a href="https://www.instagram.com/retouche_toptotoe/">
-          <img src="images/instagram.PNG" class="w3-image w3-opacity-min" alt="Instagram" width="200" height="200">
+          <img src="images/instagram.PNG" class="w3-image w3-opacity-min" alt="Instagram" width="60" height="60">
 	    </a>
 	  </div>
     </div>
